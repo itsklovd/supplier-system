@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const supplierController = require('../controllers/supplierController');
+const pdfController = require('../controllers/pdfController');
 
 // Trasy dla dostawców
 router.get('/', supplierController.getSuppliers);
@@ -14,5 +15,6 @@ router.delete('/:id', supplierController.deleteSupplier);
 router.post('/:id/products', supplierController.addProduct);
 router.put('/:supplierId/products/:productId', supplierController.updateProduct);
 router.delete('/:supplierId/products/:productId', supplierController.deleteProduct);
+router.get('/:id/pdf', pdfController.generateSupplierPdf);
 
 module.exports = router;
