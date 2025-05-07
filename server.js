@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log('MongoDB Connection Error:', err));
+  .catch(err => console.log('MongoDB Connection Eror:', err));
 
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
