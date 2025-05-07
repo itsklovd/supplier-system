@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "MONGODB_URI": "mongodb+srv://<twoja-nazwa-uzytkownika>:<twoje-haslo>@cluster0.mongodb.net/supplier-system",
+        "NODE_ENV": "production"
+      }
+    }
+}
